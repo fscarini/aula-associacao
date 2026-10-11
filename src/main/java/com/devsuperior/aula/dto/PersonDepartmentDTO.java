@@ -2,19 +2,19 @@ package com.devsuperior.aula.dto;
 
 import com.devsuperior.aula.entities.Person;
 
-public record PersonDepartamentDTO(
+public record PersonDepartmentDTO(
         Long id,
         String name,
         Double salary,
-        DepartamentDTO department
+        DepartmentDTO department
 ) {
 
-    public PersonDepartamentDTO(Person entity){
+    public PersonDepartmentDTO(Person entity){
         this(
                 entity.getId(),
                 entity.getName(),
                 entity.getSalary(),
-                new DepartamentDTO(entity.getDepartment())
+                new DepartmentDTO(entity.getDepartment())
         );
     }
 

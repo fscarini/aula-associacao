@@ -1,14 +1,13 @@
 package com.devsuperior.aula.dto;
 
 import com.devsuperior.aula.entities.Department;
-import com.devsuperior.aula.entities.Person;
 
-public record DepartamentDTO (
+public record DepartmentDTO(
         Long id,
         String name
 ){
 
-    public DepartamentDTO(Department entity){
+    public DepartmentDTO(Department entity){
         this(
                 entity.getId(),
                 entity.getName()
